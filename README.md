@@ -16,7 +16,7 @@ $ pip install esptool
 
 Em seguinda, com o dispositivo conectado por USB:
 ```
-$ esptool.py --chip esp8266 --port /dev/ttyUSB0 erase_flash
-$ esptool.py --chip esp266 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 esp8266-micropython.bin
+$ esptool.py --port /dev/ttyUSB0 erase_flash
+$ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-upython.bin
 ```
 
