@@ -7,7 +7,7 @@ $ git clone https://github.com/pedromxavier/micropython.git
 $ cd micropython
 ```
 
-Instruções para gravar no microcontrolador:
+1- Instruções para gravar no microcontrolador:
 
 Primeiro instalar a biblioteca `esptool`:
 ```
@@ -20,3 +20,13 @@ $ esptool.py --port /dev/ttyUSB0 erase_flash
 $ esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash --flash_size=detect 0 esp8266-upython.bin
 ```
 
+**Nota:** No Windows, sempre substituir `--port /dev/ttyUSB0` por `--port COM1`.
+
+2- Intruções para usar o shell do dispositivo:
+
+No Windows, instalar o programa `Tera Term`.
+
+No Linux, instalar o pacote `$ sudo apt install picocom`.
+```
+$ picocom /dev/ttyUSB0 -b115200
+```
