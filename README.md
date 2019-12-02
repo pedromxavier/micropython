@@ -7,6 +7,9 @@ $ git clone https://github.com/pedromxavier/micropython.git
 $ cd micropython
 ```
 
+## **Importante:** não esqueça de executar os comandos abaixo usando `sudo`!
+
+
 1 - Instruções para gravar no microcontrolador:
 
 Primeiro instalar a biblioteca `esptool`:
