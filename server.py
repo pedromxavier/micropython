@@ -99,7 +99,7 @@ def main():
             server(PORT)
             break
         elif cmd == 'c':
-            ip = input("Enter the server's IP address (see other ESP): ")
+            ip = '192.168.4.1'
             try:
                 client(ip, PORT)
                 break
