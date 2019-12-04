@@ -88,8 +88,8 @@ def main():
 
     while True:
         print()
-        ssid = input("Enter your WiFi name: ")
-        passwd = input("Enter WiFi password: ")
+        ssid = 'micropython-lp'
+        passwd = '1234567890'
         if connect_wifi(ssid, passwd):
             break
 
