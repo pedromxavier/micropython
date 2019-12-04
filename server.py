@@ -99,7 +99,7 @@ def main():
             server(PORT)
             break
         elif cmd == 'c':
-            ip = input('Host(IP): ')
+            ip = input('Host(IP): ')    
             try:
                 client(ip, PORT)
                 break
