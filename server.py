@@ -88,8 +88,8 @@ def main():
 
     while True:
         print()
-        ssid = 'micropython-lp'
-        passwd = '1234567890'
+        ssid = 'hsNCE'
+        passwd = ''
         if connect_wifi(ssid, passwd):
             break
 
@@ -99,7 +99,7 @@ def main():
             server(PORT)
             break
         elif cmd == 'c':
-            ip = '192.168.4.1'
+            ip = input('Host(IP): ')
             try:
                 client(ip, PORT)
                 break
